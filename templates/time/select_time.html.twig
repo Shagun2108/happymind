@@ -1,0 +1,41 @@
+
+
+{# templates/time/select_time.html.twig #}
+
+ 
+
+{% extends 'base.html.twig' %}
+
+ 
+
+{% block body %}
+
+    <h1>Select a Timezone</h1>
+
+ 
+
+    <div class="timezone-form">
+
+        {{ form_start(form) }}
+
+        
+
+        <div class="form-group">
+
+            {{ form_label(form.timezone) }}
+
+            {{ form_widget(form.timezone, {'attr': {'class': 'form-control'}}) }}
+
+        </div>
+
+        
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+ 
+
+        {{ form_end(form) }}
+
+    </div>
+
+{% endblock %}
